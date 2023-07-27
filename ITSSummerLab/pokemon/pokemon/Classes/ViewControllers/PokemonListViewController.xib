@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PokemonListViewController" customModule="pokemon" customModuleProvider="target">
+            <connections>
+                <outlet property="pokemonListView" destination="Jpk-i1-17Q" id="5G6-eN-s3c"/>
+                <outlet property="pokemonSearchBar" destination="ky6-na-QSu" id="EHd-fe-vnW"/>
+                <outlet property="titleLabel" destination="3H3-8L-mrG" id="FVt-n7-qFe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3H3-8L-mrG">
+                    <rect key="frame" x="24" y="36" width="366" height="37"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ky6-na-QSu">
+                    <rect key="frame" x="24" y="91" width="366" height="51"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jpk-i1-17Q" customClass="PokemonListView" customModule="pokemon" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="142" width="414" height="754"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ky6-na-QSu" firstAttribute="top" secondItem="3H3-8L-mrG" secondAttribute="bottom" constant="18" id="CzL-F2-opI"/>
+                <constraint firstItem="ky6-na-QSu" firstAttribute="leading" secondItem="3H3-8L-mrG" secondAttribute="leading" id="Gf1-oo-owx"/>
+                <constraint firstAttribute="bottom" secondItem="Jpk-i1-17Q" secondAttribute="bottom" id="MeZ-6g-XfF"/>
+                <constraint firstItem="3H3-8L-mrG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-8" id="QBC-vE-ubm"/>
+                <constraint firstItem="Jpk-i1-17Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Xco-2b-feu"/>
+                <constraint firstItem="Jpk-i1-17Q" firstAttribute="top" secondItem="ky6-na-QSu" secondAttribute="bottom" id="bIe-Nl-FeA"/>
+                <constraint firstItem="3H3-8L-mrG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="iR9-tn-7DN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jpk-i1-17Q" secondAttribute="trailing" id="uh7-J6-e2Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3H3-8L-mrG" secondAttribute="trailing" constant="24" id="xTf-uj-Lhn"/>
+                <constraint firstItem="ky6-na-QSu" firstAttribute="trailing" secondItem="3H3-8L-mrG" secondAttribute="trailing" id="yEg-jj-Jz0"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="150.66964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

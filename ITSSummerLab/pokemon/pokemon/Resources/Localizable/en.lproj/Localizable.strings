@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  pokemon
+
+  Created by Márcio Duarte on 12/04/2022.
+  
+*/
+
+"pokemon.app.name" = "PokemonDemo App";
+
+// MARK: - Pokemon list
+"pokemon.empty.list" = "We couldn't catch any pokemon to present";
+"pokemon.empty.search.placeholder" = "Enter Pokémon full name or ID";
+
+// MARK: - Details
+"pokemon.details.about" = "About";
+"pokemon.details.abilities" = "Abilities";
+"pokemon.details.stats" = "Stats";
+"pokemon.details.swipe" = "Swipe left and right to change pokemon";
+
+// MARK: - Pokemon Collection Cells
+"pokemon.cell.name.label" = "Name:";
+
+// MARK: - Pokemon Table Cells
+"pokemon.cell.about.number" = "Number: ";
+"pokemon.cell.about.name" = "Name: ";
+"pokemon.cell.about.pokemonType" = "Type: ";
+"pokemon.cell.about.weight" = "Weight: ";
+"pokemon.cell.about.height" = "Height: ";
+"pokemon.cell.abilities" = "Ability: ";
+"pokemon.cell.effect" = "Effect: ";
+"pokemon.cell.short.effect" = "Short Entries: ";
+
+// MARK: - Error Messages
+"pokemon.alert.error.ok.button" = "Ok.";
+"pokemon.alert.error.title" = "ℹ️ \nSomething wrong happen.";
+"pokemon.alert.error.message.MissingData" = "\nWe cannot carry out this operation right now.";
+"pokemon.alert.error.message.GeneralError" = "\nPlease, try again later.";
+"pokemon.alert.error.message.error.find.pokemon" = "\nCan't find the pokemon.";
+"pokemon.alert.error.message.cant.find.pokemon" = "\nPokemon doesn't exist";
+"pokemon.alert.error.message.connection.error" = "\nNo internet connection!";
+"pokemon.alert.error.message.no.more.pokemons" = "\nNo more pokemons";
+
+// MARK: - Accessibility Voice Over
+"pokemon.accessibility.list.pokemons" = "Pokemons List.";
+"pokemon.accessibility.list.pokemon.resume" = "%@. Pokemon with name %@. It's a type %@ pokemon. Double tap to more details.";
+"pokemon.accessibility.pokemon.details" = "About %@";
